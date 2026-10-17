@@ -23,7 +23,7 @@ export const Route = createFileRoute("/chats")({
 // Сообщения сейчас локальные; позже — подписка Supabase Realtime на таблицу messages.
 function ChatsPage() {
   const [chats, setChats] = useState<Chat[]>(initialChats);
-  const [activeId, setActiveId] = useState(chats[0].id);
+  const [activeId, setActiveId] = useState(initialChats[0]!.id);
   const [text, setText] = useState("");
   const [q, setQ] = useState("");
   const active = chats.find((c) => c.id === activeId)!;

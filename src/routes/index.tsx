@@ -34,7 +34,7 @@ function Dashboard() {
         <p className="text-sm opacity-80">Доброе утро,</p>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">Екатерина 👋</h1>
         <p className="mt-2 max-w-md opacity-90">
-          Сегодня у вас <b>{todayLessons.length} урока</b>, ближайший — в {todayLessons[0].time} с {todayLessons[0].student}.
+          Сегодня у вас <b>{todayLessons.length} урока</b>, ближайший — в {todayLessons[0]!.time} с {todayLessons[0]!.student}.
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
           <Button variant="secondary" asChild><Link to="/leads"><UserPlus /> Добавить лида</Link></Button>
